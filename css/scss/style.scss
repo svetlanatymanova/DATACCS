@@ -1,0 +1,414 @@
+@import "_zero";
+
+/*Подключение шрифтов*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+html,body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #FAFAFA;
+	font-size: 25px;
+	line-height: 160%;
+	font-weight: 400;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.container {
+	max-width: 1190px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+//Начало адаптива container
+//@media (max-width: 1920px) {
+//	[class*="__container"] {
+//		max-width: 1000px;
+
+//	}
+//}
+//@media (max-width: 1440px) {
+//	[class*="__container"] {
+//		max-width: 800px;
+
+//	}
+//}
+//@media (max-width: 860px) {
+//	[class*="__container"] {
+//		max-width: 600px;
+
+//	}
+//}
+//@media (max-width: 660px) {
+//	[class*="__container"] {
+//		max-width: 500px;
+
+//	}
+//}
+//@media (max-width: 580px) {
+//	[class*="__container"] {
+//		max-width: 420px;
+
+//	}
+//}
+//@media (max-width: 500px) {
+//	[class*="__container"] {
+//		max-width: 360px;
+
+//	}
+//}
+//@media (max-width: 420px) {
+//	[class*="__container"] {
+//		max-width: 320px;
+
+//	}
+//}
+//Конец адаптива container
+
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 50;
+	left: 0;
+	top: 0;
+		&::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #FAFAFA;
+		}
+
+		&__body {
+			position: relative;
+			z-index: 2;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 120px;			
+		}
+
+		&__logo {
+			flex: 0 0 100px;
+		}
+
+		&__menu {
+			gap: 60px;
+
+		}
+
+		&__phone {
+		}
+}
+.menu {
+	display: flex;
+		&__link {
+			display: flex;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 20px;
+			text-align: center;
+		}
+		&__a {
+			color: #1C1C1C;
+		}
+
+		&__icon {
+			width:9px;
+			height:6px;
+			stroke: #1C1C1C;
+		}
+}
+.sub-menu {
+	display: none;
+
+		&__link {
+		}
+}
+.phone {
+	display: flex;
+
+		&__link {
+			display: flex;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 160%;
+
+			text-align: center;
+			text-transform: uppercase;
+
+			color: #000000;
+			gap: 33px;
+		}
+
+		&__icon {
+			fill: #000000;
+			width:21px;
+			height: 21px;
+		}
+
+		&__number {
+		}
+}
+.main {
+	padding: 120px 0 0 0;
+	flex: 1 1 auto;
+
+		&__slider {
+		}
+
+		&__text {
+			margin: 80px 0 0 0;
+		}
+
+		&__directions {
+			margin: 66px 0 0 0;
+		}
+		&__scheme {
+			margin: 66px 0 0 0;
+
+		}
+		&__scheme img{
+			width: 100%;
+
+		}
+
+		&__quote {
+		}
+
+		&__news {
+		}
+}
+.slider {
+	position: relative;
+	max-width: 100%;
+	height: 536px;
+
+		&__item {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+		}
+		&__item img{
+			width: 100%;
+			height: 100%;
+		}
+
+	
+		
+}
+.mask {
+		&__img{
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+		&__img img{
+			height: 100%;
+
+		}
+		&__text{
+			position: absolute;
+			right: 4%;
+			top: 30%;
+			max-width: 318px;
+
+		}
+		&__title {
+			font-weight: 700;
+			font-size: 48px;
+			line-height: 65px;
+
+			color: #FFFFFF;
+			padding: 0 0 10px 0;
+			
+		}
+
+		&__subtitle {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 27px;
+
+			color: #FFFFFF;
+
+			
+		}
+}
+.text {
+	background-color: #257994;
+
+		&__container {
+		}
+
+		&__title {
+			padding: 40px 0 0 0;
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 41px;
+
+			text-align: center;
+			text-transform: uppercase;
+
+			color: #FFFFFF;
+		}
+
+		&__content {
+			margin: 60px 0 0 0;
+			padding: 0 0 65px 0;
+		}
+
+		&__p {
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 160%;
+			
+			letter-spacing: 0.05em;
+			
+			color: #FFFFFF;
+
+		}
+}
+.directions {
+	font-family: 'Montserrat';
+	line-height: 160%;
+	text-align: center;
+	letter-spacing: 0.05em;
+
+		&__title {
+			font-weight: 700;
+			font-size: 40px;
+			color: #000000;
+			padding: 0 0 44px 0;
+		}
+
+		&__subtitle {
+			font-weight: 400;
+			font-size: 20px;
+			color: #545454;
+		}
+
+		&__column {
+			padding: 70px 0 0 0;
+
+			display: flex;
+			
+			max-width: 1390px;
+			margin: 0 auto;
+			flex-wrap: wrap;
+			gap: 50px;
+		}
+
+		&__item {
+		}
+}
+.item {
+	display: flex;
+	flex-direction: column;
+		&__background {
+			
+		}
+
+		&__title {
+			width: 100%;
+			background: #257994;
+			padding: 20px 0 35px 0;
+		}
+
+		&__h3 {
+			font-family: 'Montserrat';
+			font-weight: 700;
+			font-size: 28px;
+			line-height: 160%;
+			text-align: center;
+			color: #FFFFFF;
+		}
+}
+.quote {
+
+		&__background {
+		}
+
+		&__content {
+		}
+
+		&__left {
+		}
+
+		&__right {
+		}
+}
+.left {
+
+		&__img {
+		}
+}
+.right {
+
+		&__title {
+		}
+
+		&__subtitle {
+		}
+
+		&__p {
+		}
+}
+.news {
+
+		&__title {
+		}
+
+		&__column {
+		}
+
+		&__card {
+		}
+}
+.card {
+
+		&__img {
+		}
+
+		&__tetle {
+		}
+
+		&__subtitle {
+		}
+}
+.footer {
+
+		&__lists {
+		}
+
+		&__list {
+		}
+
+		&__title {
+		}
+
+		&__column {
+		}
+
+		&__text {
+		}
+}
+.column {
+
+		&__item {
+		}
+
+		&__item-blue {
+		}
+}
+
