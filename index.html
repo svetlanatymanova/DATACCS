@@ -184,9 +184,6 @@
                 <img src="img/scheme.jpg" alt="Схема">
             </section>
             <section class="main__quote quote">
-                <div class="quote__background">
-                    <img src="img/background.jpg" alt="background">
-                </div>
                 <div class="quote__content">
                     <div class="quote__left left">
                         <div class="left__img">
@@ -202,7 +199,6 @@
                         </div>
                     </div>
                 </div>
-
             </section>
             <section class="main__news news">
                 <h2 class="news__title">Новости</h2>
@@ -211,29 +207,29 @@
                         <div class="card__img">
                             <img src="img/cards/img_1.jpg" alt="Объектное облачное хранилище">
                         </div>
-                        <h4 class="card__tetle">«Объектное облачное хранилище» DATACSS</h4>
+                        <h4 class="card__title">«Объектное облачное хранилище» DATACSS</h4>
                         <p class="card__subtitle">Сегодня объектные системы хранения особенно актуальны ввиду бурного
                             роста
                             объемов данных, которые необходимо хранить, обрабатывать, анализировать и пр.</p>
-                        <a href="#">Подробнее</a>
+                        <a class="card__link" href="#">Подробнее</a>
                     </div>
                     <div class="news__card card">
                         <div class="card__img">
                             <img src="img/cards/img_2.jpg" alt="Третий благотворительный аукцион">
                         </div>
-                        <h4 class="card__tetle">Третий благотворительный аукцион</h4>
+                        <h4 class="card__title">Третий благотворительный аукцион</h4>
                         <p class="card__subtitle">21 апреля завершился третий благотворительный аукцион 2022 года.</p>
-                        <a href="#">Подробнее</a>
+                        <a class="card__link" href="#">Подробнее</a>
                     </div>
                     <div class="news__card card">
                         <div class="card__img">
                             <img src="img/cards/img_3.jpg" alt="beCloud">
                         </div>
-                        <h4 class="card__tetle">Провайдер услуг безопасности: beCloud</h4>
+                        <h4 class="card__title">Провайдер услуг безопасности: beCloud</h4>
                         <p class="card__subtitle">Облачному оператору beCloud присвоен новый статус Managed Security
                             Service
                             Provider (MSSP) в рамках партнерской программы «Лаборатории Касперского».</p>
-                        <a href="#">Подробнее</a>
+                        <a class="card__link" href="#">Подробнее</a>
                     </div>
                 </div>
             </section>
@@ -245,39 +241,71 @@
             <div class="footer__lists">
                 <div class="footer__list">
                     <p class="footer__title">О нас</p>
-                    <nav class="footer__column">
-                        <a href="#" class="column__item">Помощь</a>
-                        <a href="#" class="column__item">Новости</a>
-                        <a href="#" class="column__item">Контакты</a>
-                        <a href="#" class="column__item">О нас</a>
-                    </nav>
+                    <ul class="footer__column column">
+                        <li class="column__link">
+                            <a href="#" class="column__item">Помощь</a>
+                        </li>
+                        <li class="column__link">
+                            <a href="#" class="column__item">Новости</a>
+                        </li>
+                        <li class="column__link">
+                            <a href="#" class="column__item">Контакты</a>
+                        </li>
+                        <li class="column__link">
+                            <a href="#" class="column__item">О нас</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer__list">
                     <p class="footer__title">Услуги</p>
-                    <nav class="footer__column">
-                        <a href="#" class="column__item">Услуги хостинга</a>
-                        <a href="#" class="column__item">Цены на хостинг</a>
-                        <a href="#" class="column__item">VPS/VDS - хостинг</a>
-                        <a href="#" class="column__item">Аренда сервера</a>
-                    </nav>
+                    <ul class="footer__column column">
+                        <li class="column__link">
+                            <a href="#" class="column__item">Услуги хостинга</a>
+                        </li>
+                        <li class="column__link">
+                            <a href="#" class="column__item">Цены на хостинг</a>
+                        </li>
+                        <li class="column__link">
+                            <a href="#" class="column__item">VPS/VDS - хостинг</a>
+                        </li>
+                        <li class="column__link">
+                            <a href="#" class="column__item">Аренда сервера</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer__list">
                     <p class="footer__title">Дополнительно</p>
-                    <nav class="footer__column">
-                        <a href="#" class="column__item">Почта</a>
-                        <a href="#" class="column__item">SSL - сертификаты</a>
-                        <a href="#" class="column__item">Защита от спама и вирусов</a>
-                        <a href="#" class="column__item">Решение для бизнеса</a>
-                    </nav>
+                    <ul class="footer__column column">
+                        <li class="column__link">
+                            <a href="#" class="column__item">Почта</a>
+                        </li>
+                        <li class="column__link">
+                            <a href="#" class="column__item">SSL - сертификаты</a>
+                        </li>
+                        <li class="column__link">
+                            <a href="#" class="column__item">Защита от спама и вирусов</a>
+                        </li>
+                        <li class="column__link">
+                            <a href="#" class="column__item">Решение для бизнеса</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer__list">
                     <p class="footer__title">Контакты</p>
-                    <nav class="footer__column">
-                        <a href="#" class="column__item">Информационная служба</a>
-                        <a href="#" class="column__item column__item-blue">info@DATACCS@mail.ru</a>
-                        <a href="#" class="column__item">Техническая поддержка</a>
-                        <a href="#" class="column__item column__item-blue">support@DATACCS@mail.ru</a>
-                    </nav>
+                    <ul class="footer__column column">
+                        <li class="column__link">
+                            <a href="#" class="column__item">Информационная служба</a>
+                        </li>
+                        <li class="column__link">
+                            <a href="#" class="column__item column__item-blue">info@DATACCS@mail.ru</a>
+                        </li>
+                        <li class="column__link">
+                            <a href="#" class="column__item">Техническая поддержка</a>
+                        </li>
+                        <li class="column__link">
+                            <a href="#" class="column__item column__item-blue">support@DATACCS@mail.ru</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="footer__text">
